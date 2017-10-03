@@ -1,8 +1,8 @@
 const binaryGap = function(N) {
-    var i = 0;
-    var current_gap = 0
-    var biggest_gap = 0;
-    var open = false;
+    let i = 0;
+    let current_gap = 0
+    let biggest_gap = 0;
+    let open = false;
     while(Math.pow(2,i) < N){
         if((Math.pow(2,i) & N) == Math.pow(2,i)){
             if (open){
