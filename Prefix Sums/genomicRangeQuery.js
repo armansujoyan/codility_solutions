@@ -25,7 +25,7 @@ const genomicRangeQuery = (S, P, Q) => {
         
         for(let a=0;a<4;a++){
             let sub = 0;
-            if(x-1 > 0) sub = arr[x-1][a];
+            if(x-1 >= 0) sub = arr[x-1][a];
             if(arr[y][a] - sub > 0){
                 result[i] = a+1;
                 break;
